@@ -1,7 +1,7 @@
 # Code Quiz
 
 # Description
-I think of myself as an NBA historian of sorts. Let's test your skills on your knowledge of the game.
+I think of myself as an NBA historian of sorts. Let's test your skills on your knowledge of the game that I love: basketball.
 
 # Acceptance Criteria
 * GIVEN I am taking a code quiz

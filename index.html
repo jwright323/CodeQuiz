@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>NBA Quiz</title>
+</head>     
+<body>   
+    <!-- Nav bar used to hold timer and high score link -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="highscores.html">View High Scores</a>
+            <button class="navbar-toggler" type="button" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto text-right">
+                    <div class="nav navbar-nav navbar-right" id="time">Time: 0</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron houses content of page for easy styling -->
+    <div class="container">
+        <div class="jumbotron text-center">
+            <div class="row">
+                <div class="col-md-12 col-lg-12" id="master-div">
+                    <h3 id="question"></h3>
+                    <div id="answers">
+                        <button type="button" class="btn btn-dark" id="choiceA"></button>
+                        <button type="button" class="btn btn-dark" id="choiceB"></button>
+                        <button type="button" class="btn btn-dark" id="choiceC"></button>
+                        <button type="button" class="btn btn-dark" id="choiceD"></button>
+                    </div>
+                    <div id="message">
+                        <h1>Javascript Quiz </h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6" id="buttonDiv"><button type="button" class="btn btn-dark" id="startButton"> Start Quiz </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Links to javascript files-->
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

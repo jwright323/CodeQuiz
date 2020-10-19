@@ -36,7 +36,7 @@ function questionEnder() {
     if (score <= 0 ) {
         score = 0;
     };
-    document.getElementById("question").textContent = "Sorry, Game Over";
+    document.getElementById("question").textContent = "Game Over!";
     choiceA.remove();
     choiceB.remove();
     choiceC.remove();
@@ -56,7 +56,7 @@ function questionEnder() {
         var hiScoreText = new Object();   
         hiScoreText.name = inputTag.value.trim(); 
         hiScoreText.newScore = score;     
-        saveScores(highScoreText);   
+        saveScores(hiScoreText);   
         window.location.href = "index.html";    
     });  
 };
@@ -83,7 +83,7 @@ function questionInit() {
 function saveScores(hiScoreText) {
     tempArray = JSON.parse(localStorage.getItem("scores"));
     if (tempArray === null) {
-        scoreList.push(highScoreText);
+        scoreList.push(hiScoreText);
         localStorage.setItem("scores", JSON.stringify(scoreList));
     }
     else {
@@ -131,7 +131,7 @@ document.getElementById("choiceC").addEventListener("click", function () {
         score++;
     }
     else {
-        newMessage.textContent = "Sorry, that's not right";
+        newMessage.textContent = "Are you ANY good at this game?";
         timeClock -= 5;
     }
     i++;

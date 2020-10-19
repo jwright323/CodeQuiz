@@ -9,8 +9,8 @@ const questions = [
 
     {
         title: "Who is the current Commissioner of the NBA?",
-        choices: ["Lebron James", "Michael Jordan", "Adam Silver", "David Stern"],
-        answer: "David Stern"
+        choices: ["LeBron James", "Michael Jordan", "Adam Silver", "David Stern"],
+        answer: "Adam Silver"
     },
 
     {
@@ -27,13 +27,13 @@ const questions = [
 
     {
         title: "How many NBA teams are there in the state of California?",
-        choices: ["2", "3", "4", "6"],
+        choices: ["6", "4", "3", "2"],
         answer: "4"
     },
 
     {
         title: "In what year did Michael Jordan win Defensive Player of the Year?",
-        choices: ["2005", "1983", "1988", "1994"],
+        choices: ["2005", "1988", "1983", "1994"],
         answer: "1988"
     },
 

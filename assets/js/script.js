@@ -139,7 +139,7 @@ document.getElementById("choiceC").addEventListener("click", function () {
 });
 document.getElementById("choiceD").addEventListener("click", function () {
     if (questions[i]["choices"][3] === questions[i]["answer"]) {
-        newMessage.textContent = "You are right";
+        newMessage.textContent = "Great job!";
         score++;
     }
     else {
